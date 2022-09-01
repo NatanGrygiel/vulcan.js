@@ -3,13 +3,16 @@
     "name": "Vulcan.js",
     "version": "0.0.1",
     "description": "Change the look and feel of your Vulcan UI with this extension.",
+    "author": "Natan Grygiel & Oliwier Waldoch",
     "action": {
       "default_icon": "assets/icon.png",
       "default_popup": "popup.html"
     },
     "icons": {
-      "16": "assets/icon16.png",
-      "48": "assets/icon48.png",
-      "128": "assets/icon128.png"
+        "16": "assets/logo16.png",
+        "32": "assets/logo32.png",
+        "48": "assets/logo48.png",
+        "64": "assets/logo64.png",
+        "128": "assets/logo128.png"
+      }
     }
-  }
