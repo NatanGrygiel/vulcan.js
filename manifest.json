@@ -1,25 +1,25 @@
 {
-    "manifest_version": 3,
+
+    "manifest_version": 2,
     "name": "Vulcan.js",
-    "version": "0.0.1",
-    "description": "Change the look and feel of your Vulcan UI with this extension.",
-    "author": "Natan Grygiel & Oliwier Waldoch",
-    "action": {
-      "default_icon": "assets/icon.png",
-      "default_popup": "popup.html"
-    },
+    "version": "1.0",
+  
+    "description": "Change the look and feel of your Vulcan gradebook with this extension.", 
+    "homepage_url": "https://natangrygiel.pl/vulcanjs",
+  
     "icons": {
-        "16": "assets/logo16.png",
-        "32": "assets/logo32.png",
-        "48": "assets/logo48.png",
-        "64": "assets/logo64.png",
-        "128": "assets/logo128.png"
+        "16": "logo/logo16.png",
+        "32": "logo/logo32.png",
+      "48": "logo/logo48.png",
+        "64": "logo/logo64.png",
+      "128": "logo/logo128.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.vulcan.net.pl/*"],
+        "js": ["theme/folly/vulcan.js"]
       }
-      
-      "content_scripts": [
-        {
-          "matches": ["*://*.mozilla.org/*"],
-          "js": ["borderify.js"]
-        }
-      ]
-    }
+    ]
+  
+  }
