@@ -1,0 +1,17 @@
+/* create variables for the colors */
+/* set font-family to Anonymous Pro Mono */
+html, body, input, textarea, select, button {
+  font-family: "Anonymous Pro", monospace;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #00ffc8;
+  background: linear-gradient(#353535), #00ffc8;
+}
+
+h1 {
+  color: #ff4f4f;
+  font-size: 10vw;
+}/*# sourceMappingURL=style.css.map */
