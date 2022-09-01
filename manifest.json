@@ -15,4 +15,11 @@
         "64": "assets/logo64.png",
         "128": "assets/logo128.png"
       }
+      
+      "content_scripts": [
+        {
+          "matches": ["*://*.mozilla.org/*"],
+          "js": ["borderify.js"]
+        }
+      ]
     }
