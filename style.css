@@ -8,7 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   background: #00ffc8;
-  background: linear-gradient(#353535), #00ffc8;
+  background: linear-gradient(#353535, #00ffc8);
 }
 
 h1 {
