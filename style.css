@@ -4,14 +4,40 @@ html, body, input, textarea, select, button {
   font-family: "Anonymous Pro", monospace;
 }
 
+/* set the background color to grey */
 body {
-  width: 100vw;
-  height: 100vh;
-  background: #00ffc8;
-  background: linear-gradient(#353535, #00ffc8);
+  background-color: #353535;
 }
 
 h1 {
   color: #ff4f4f;
-  font-size: 10vw;
+  font-size: 5vw;
+}
+
+.particles-js {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-color: #353535;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #ff4f4f;
+}
+
+/* create a .top class */
+/* set the background color to bg-alt */
+/* center it horizontally and make it on the top of the screen */
+/* add a 5px border that is the same color as the primary variable */
+.top {
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  height: 50%;
+  border: 5px solid #ff4f4f;
 }/*# sourceMappingURL=style.css.map */

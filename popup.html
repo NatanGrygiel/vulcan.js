@@ -8,8 +8,23 @@
     <title>Vulcan.js</title>
 </head>
 <body>
+    <!-- start particles.js with it's container -->
+    <div class="particles-js" id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'config.json', function() {
+            console.log('particles.js loaded - callback');
+        });
+    </script>
     <!-- this code is for the popup that is displayed when the user clicks the browser extension icon -->
     <!-- this popup is for the extension options -->
-    <h1> Vulcan.js </h1>
+    <div class="top">
+        <h1>Vulcan.js</h1>
+    </div>
+
+<div class="container">
+<h1>.</h1>
+</div>
+
 </body>
 </html>  
