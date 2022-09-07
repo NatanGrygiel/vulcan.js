@@ -1,6 +1,6 @@
 {
 
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Vulcan.js",
     "version": "1.0",
     "description": "Change the look and feel of your Vulcan gradebook with this extension.", 
@@ -14,9 +14,10 @@
       "128": "logo/logo128.png"
     },
 
-    "action": {
-      "default_icon": "logo/icon.png",
-      "default_popup": "popup.html"
+    "browser_action": {
+        "default_icon": "logo/icon.png",
+        "default_title": "Vulcan.js",
+        "default_popup": "popup.html"
     },
   
     "content_scripts": [

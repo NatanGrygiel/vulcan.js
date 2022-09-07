@@ -1,14 +1,14 @@
 /* create variables for the colors */
 $bg:#353535;
 $primary:#ff4f4f;
-$white: #ffffff;
-$bg-alt: #000000;
-$bg-alt2: #494949;
+$secondary:#ffffff;
+
 
 
 /* set font-family to Anonymous Pro Mono */
 html, body, input, textarea, select, button {
     font-family: 'Anonymous Pro', monospace;
+    text-align: center;
 }
 
 
@@ -17,27 +17,25 @@ body {
     background-color: $bg;
 }
 
+html,
+body {
+  width: 250px;
+}
+
+.hidden {
+  display: none;
+}
+
 h1 {
     color: $primary;
-    font-size: 5vw;
+    font-size: 20px;
+    text-align: center;
 }
 
-.particles-js {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    background-color: $bg;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 5px solid $primary;
-}
-
-/* create a .top class */
-/* set the background color to bg-alt */
-/* center it horizontally and make it on the top of the screen */
-/* add a 5px border that is the same color as the primary variable */
-/
+a {
+    color: $secondary;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+} 
 

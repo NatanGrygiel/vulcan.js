@@ -1,0 +1,5 @@
+# ignore theme files because it will take too much space
+# they will be available to download from the releases page
+# and their source code will be available in another repository
+themes/**
+!themes/README.md
