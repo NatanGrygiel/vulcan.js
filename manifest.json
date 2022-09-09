@@ -19,6 +19,16 @@
         "default_title": "Vulcan.js",
         "default_popup": "popup.html"
     },
+
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs",
+        "webRequest",
+        "webRequestBlocking",
+        "http://*/*",
+        "https://*/*"
+    ],
   
     "content_scripts": [
       {

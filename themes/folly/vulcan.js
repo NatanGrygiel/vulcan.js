@@ -7,5 +7,9 @@
 /* ███████████████████████████████████ */
 
 
-/* add a 5px border on the whole page */
-document.body.style.border = "5px solid red";
+/* change the title of the page to vulcan.js */
+/* apply the title every time the page is loaded so it doesn't change back */
+document.title = "vulcan.js";
+window.addEventListener("load", function() {
+    document.title = "vulcan.js";
+}
