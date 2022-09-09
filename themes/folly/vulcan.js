@@ -7,9 +7,21 @@
 /* ███████████████████████████████████ */
 
 
-/* change the title of the page to vulcan.js */
-/* apply the title every time the page is loaded so it doesn't change back */
+/* change the document title to vulcan.js */
+/* make the custom title stay even if the page tries to change it */
 document.title = "vulcan.js";
-window.addEventListener("load", function() {
+document.addEventListener("DOMSubtreeModified", function() {
     document.title = "vulcan.js";
 }
+);
+/* change the favicon to logo128.png */
+/* make the custom favicon stay even if the page tries to change it */
+var favicon = document.createElement("link");
+favicon.rel = "icon";
+favicon.href = "https://natangrygiel.pl/assets/logo128.png";
+document.head.appendChild(favicon);
+document.addEventListener("DOMSubtreeModified", function() {
+    document.head.appendChild(favicon);
+}
+);
+
