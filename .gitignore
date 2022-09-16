@@ -1,3 +1,10 @@
 # ignore theme files because it will take too much space
 # they will be available to download from the releases page
 # and their source code will be available in another repository
+# except for the default theme (called "folly") because it's the first theme and it's also a good example of how to create a theme
+
+#ignore everything in the themes folder
+themes/*
+#except for the default theme
+!themes/folly
+!themes/folly/*
