@@ -5,31 +5,26 @@
 /* █ You can use this file to create █ */
 /* █  your own theme for vulcan.js.  █ */
 /* ███████████████████████████████████ */
-/* (  Vulcan.js is an extension for  ) */
-/* (  all browsers that allows you   ) */
-/* (  to change the look of your     ) */
-/* (  electronic gradebook, it uses  ) */
-/* (  a CSS injection method to make ) */
-/* (  the website look better.       ) */
 
-/* change the document title to vulcan.js */
-/* make the custom title stay even if the page tries to change it */
-document.title = "vulcan.js";
-document.addEventListener("DOMSubtreeModified", function() {
-    document.title = "vulcan.js";
-    }
-);
 
-/* change the favicon to vulcan.js */
-var favicon = document.createElement('link');
-favicon.type = 'image/x-icon';
-favicon.rel = 'shortcut icon';
-favicon.href = 'https://natangrygiel.pl/assets/icon.png';
-document.getElementsByTagName('head')[0].appendChild(favicon);
+/* this is a web extension, so we will use the web extension API */
+/* https://developer.mozilla.org/en-US/Add-ons/WebExtensions */
 
-/* start changing the website */
-/* we will do it the easy way, by changing the CSS */
-/* I grabbed the original CSS from the website so it should be easy to change */
-/* next, I will change the CSS so it will look different, as is the point of this theme extension */
-/* So now, we will be able to inject our own CSS into the website */
+/* let's start by making sure that the extension is working */
+/* we will use the console.log() function to print a message to the console */
+console.log("Vulcan.js loaded!");
+/* if you open the browser console, you should see the message */
 
+/* the user may not be as tech-savvy to know how to open the console, */
+/* so we will also change the document title to "Vulcan.js" and the favicon to the Vulcan.js logo */
+document.title = "Vulcan.js";
+document.querySelector("link[rel='shortcut icon']").href = "https://raw.githubusercontent.com/NatanGrygiel/vulcan.js/master/logo/icon.png";
+/* javascript doesn't allow to href local files, so we use the icon from the github repository */
+
+/* define our custom CSS */
+const CSS = "body { border: 20px solid red; }";
+/* insert the CSS into the page using insertCSS() */
+/* this is really dumb, but it works */
+if (1 == 1) {
+    browser.tabs.insertCSS({code: CSS});
+}

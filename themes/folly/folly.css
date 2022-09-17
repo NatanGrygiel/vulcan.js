@@ -2,12 +2,9 @@
 /* vulcan.css is the css that's used on vulcan.net.pl */
 /* i did not write vulcan.css, i only use it as a base for my own css */
 /* i will be using scss so i can use variables and mixins */
-
 /* space for variables */
-$bg: #0000ff;
 /* space for mixins */
-
 /* space for the actual css */
 body {
-  background-color: $bg;
-}
+  background-color: #0000ff;
+}/*# sourceMappingURL=folly.css.map */
